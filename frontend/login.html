@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login • CarePlus</title><link rel="stylesheet" href="css/style.css"></head>
+<body><main class="lg"><div class="card"><div class="logo">✚ CarePlus</div><h2>Welcome back</h2><p><small>Sign in to your healthcare workspace.</small></p>
+<form id="lf" novalidate><label for="uid">User ID / Email<input id="uid" autocomplete="username"></label><div class="err" id="e1"></div>
+<label for="pw">Password<div style="display:flex;gap:.4rem"><input id="pw" type="password" autocomplete="current-password"><button type="button" class="sm" id="pw-t" aria-label="Show or hide password">👁</button></div></label><div class="err" id="e2"></div>
+<div class="roles" role="radiogroup" aria-label="Role"><label><input type="radio" name="role" value="admin">Admin<small>System admin</small></label><label><input type="radio" name="role" value="doctor">Doctor<small>Professional</small></label><label><input type="radio" name="role" value="patient">Patient<small>User</small></label></div>
+<div class="row" style="margin:.8rem 0"><label class="chk" style="margin:0"><input type="checkbox" id="rm"> Remember me</label><a href="#" id="fp">Forgot password?</a></div>
+<button class="btn" id="lb" style="width:100%">Login</button></form>
+<p style="text-align:center"><small>Quick demo</small></p><div class="roles"><button class="sm" data-demo="admin">Continue as Admin</button><button class="sm" data-demo="doctor">Continue as Doctor</button><button class="sm" data-demo="patient">Continue as Patient</button></div>
+<p style="text-align:center;font-size:.75rem"><small>Prototype Mode • Authentication simulated for demonstration<br>Any non-empty credentials work. <a href="index.html">← Home</a></small></p></div></main>
+<script src="js/core.js"></script><script src="js/auth.js"></script></body></html>
